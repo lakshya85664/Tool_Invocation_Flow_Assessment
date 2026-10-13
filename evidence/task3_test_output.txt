@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.1, pluggy-1.6.0 -- E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment
+plugins: anyio-4.15.1
+collecting ... collected 13 items
+
+tests/test_task3_security_failures.py::test_guest_is_denied PASSED       [  7%]
+tests/test_task3_security_failures.py::test_missing_principal_is_denied PASSED [ 15%]
+tests/test_task3_security_failures.py::test_malformed_calls_are_rejected[None] PASSED [ 23%]
+tests/test_task3_security_failures.py::test_malformed_calls_are_rejected[bad_call1] PASSED [ 30%]
+tests/test_task3_security_failures.py::test_malformed_calls_are_rejected[bad_call2] PASSED [ 38%]
+tests/test_task3_security_failures.py::test_malformed_calls_are_rejected[bad_call3] PASSED [ 46%]
+tests/test_task3_security_failures.py::test_malformed_calls_are_rejected[bad_call4] PASSED [ 53%]
+tests/test_task3_security_failures.py::test_unregistered_tool_is_rejected PASSED [ 61%]
+tests/test_task3_security_failures.py::test_invalid_order_identifier_is_rejected PASSED [ 69%]
+tests/test_task3_security_failures.py::test_unexpected_exception_is_not_exposed PASSED [ 76%]
+tests/test_task3_security_failures.py::test_timeout_returns_controlled_status PASSED [ 84%]
+tests/test_task3_security_failures.py::test_handler_is_not_called_for_unauthorized_user PASSED [ 92%]
+tests/test_task3_security_failures.py::test_admin_can_access_registered_tool PASSED [100%]
+
+============================= 13 passed in 0.19s ==============================

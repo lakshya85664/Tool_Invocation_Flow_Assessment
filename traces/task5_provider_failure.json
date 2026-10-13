@@ -1,0 +1,45 @@
+{
+  "principal": {
+    "id": "support-task5",
+    "role": "customer_support"
+  },
+  "request": {
+    "arguments": {
+      "order_id": "ORD-1001"
+    },
+    "name": "order.lookup",
+    "request_id": "task5-provider-failure-001"
+  },
+  "result": {
+    "data": {},
+    "events": [
+      {
+        "request_id": "task5-provider-failure-001",
+        "stage": "request",
+        "status": "accepted"
+      },
+      {
+        "stage": "selection",
+        "status": "selected",
+        "tool": "order.lookup",
+        "version": "1.0.0"
+      },
+      {
+        "role": "customer_support",
+        "stage": "authorization",
+        "status": "allowed"
+      },
+      {
+        "stage": "validation",
+        "status": "valid"
+      },
+      {
+        "stage": "execution",
+        "status": "failed"
+      }
+    ],
+    "next_action": "retry_or_review",
+    "status": "failed"
+  },
+  "scenario": "provider_failure"
+}

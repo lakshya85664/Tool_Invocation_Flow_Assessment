@@ -1,0 +1,36 @@
+{
+  "principal": {
+    "id": "guest-task5",
+    "role": "guest"
+  },
+  "request": {
+    "arguments": {
+      "order_id": "ORD-1001"
+    },
+    "name": "order.lookup",
+    "request_id": "task5-denied-001"
+  },
+  "result": {
+    "data": {},
+    "events": [
+      {
+        "request_id": "task5-denied-001",
+        "stage": "request",
+        "status": "accepted"
+      },
+      {
+        "stage": "selection",
+        "status": "selected",
+        "tool": "order.lookup",
+        "version": "1.0.0"
+      },
+      {
+        "stage": "authorization",
+        "status": "denied"
+      }
+    ],
+    "next_action": "request_authorization",
+    "status": "denied"
+  },
+  "scenario": "denied"
+}

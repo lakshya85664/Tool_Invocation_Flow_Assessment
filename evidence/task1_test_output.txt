@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.1, pluggy-1.6.0 -- E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment
+plugins: anyio-4.15.1
+collecting ... collected 15 items
+
+tests/test_task1_contract_registry.py::test_valid_order_lookup_input PASSED [  6%]
+tests/test_task1_contract_registry.py::test_invalid_order_ids_are_rejected[] PASSED [ 13%]
+tests/test_task1_contract_registry.py::test_invalid_order_ids_are_rejected[ORD-123] PASSED [ 20%]
+tests/test_task1_contract_registry.py::test_invalid_order_ids_are_rejected[ORD-1234567890123] PASSED [ 26%]
+tests/test_task1_contract_registry.py::test_invalid_order_ids_are_rejected[BAD-1001] PASSED [ 33%]
+tests/test_task1_contract_registry.py::test_invalid_order_ids_are_rejected[ORD-ABCD] PASSED [ 40%]
+tests/test_task1_contract_registry.py::test_extra_input_fields_are_rejected PASSED [ 46%]
+tests/test_task1_contract_registry.py::test_missing_order_id_is_rejected PASSED [ 53%]
+tests/test_task1_contract_registry.py::test_output_contract_accepts_valid_result PASSED [ 60%]
+tests/test_task1_contract_registry.py::test_output_contract_rejects_extra_fields PASSED [ 66%]
+tests/test_task1_contract_registry.py::test_registry_contains_versioned_read_tool PASSED [ 73%]
+tests/test_task1_contract_registry.py::test_unknown_tool_is_not_registered PASSED [ 80%]
+tests/test_task1_contract_registry.py::test_registry_summary_is_json_serializable PASSED [ 86%]
+tests/test_task1_contract_registry.py::test_input_schema_file_exists_and_matches_contract PASSED [ 93%]
+tests/test_task1_contract_registry.py::test_output_schema_file_exists PASSED [100%]
+
+============================= 15 passed in 0.16s ==============================

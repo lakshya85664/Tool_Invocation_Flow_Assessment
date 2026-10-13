@@ -1,0 +1,18 @@
+
+{
+  "title": "OrderLookupOutput",
+  "type": "object",
+  "properties": {
+    "order_id": {"type": "string"},
+    "status": {"type": "string"},
+    "estimated_delivery": {
+      "anyOf": [
+        {"type": "string"},
+        {"type": "null"}
+      ],
+      "default": null
+    }
+  },
+  "required": ["order_id", "status"],
+  "additionalProperties": false
+}

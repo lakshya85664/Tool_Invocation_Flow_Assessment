@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.1, pluggy-1.6.0 -- E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment
+plugins: anyio-4.15.1
+collecting ... collected 8 items
+
+tests/test_task2_invocation_flow.py::test_valid_call_returns_order_data PASSED [ 12%]
+tests/test_task2_invocation_flow.py::test_result_contains_invocation_stages PASSED [ 25%]
+tests/test_task2_invocation_flow.py::test_unknown_tool_returns_not_found PASSED [ 37%]
+tests/test_task2_invocation_flow.py::test_invalid_arguments_do_not_execute_tool PASSED [ 50%]
+tests/test_task2_invocation_flow.py::test_missing_request_id_is_rejected PASSED [ 62%]
+tests/test_task2_invocation_flow.py::test_missing_or_unauthorized_principal_is_denied PASSED [ 75%]
+tests/test_task2_invocation_flow.py::test_unknown_order_returns_not_found PASSED [ 87%]
+tests/test_task2_invocation_flow.py::test_invalid_call_does_not_reach_handler PASSED [100%]
+
+============================== 8 passed in 0.15s ==============================

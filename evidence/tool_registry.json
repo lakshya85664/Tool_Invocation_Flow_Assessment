@@ -1,0 +1,12 @@
+[
+  {
+    "name": "order.lookup",
+    "version": "1.0.0",
+    "description": "Look up a sample order using its order ID.",
+    "access": "read",
+    "allowed_roles": [
+      "customer_support",
+      "admin"
+    ]
+  }
+]

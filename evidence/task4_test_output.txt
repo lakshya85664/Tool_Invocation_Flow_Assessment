@@ -1,0 +1,19 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.1, pluggy-1.6.0 -- E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\Tayana_Projects\Tool_Calling_Engineering\Tool_Invocation_Flow_Assessment
+plugins: anyio-4.15.1
+collecting ... collected 10 items
+
+tests/test_task4_reliability.py::test_rate_limiter_allows_requests_within_limit PASSED [ 10%]
+tests/test_task4_reliability.py::test_rate_limiter_expires_old_requests PASSED [ 20%]
+tests/test_task4_reliability.py::test_rate_limits_are_separate_per_key PASSED [ 30%]
+tests/test_task4_reliability.py::test_idempotency_store_returns_saved_result PASSED [ 40%]
+tests/test_task4_reliability.py::test_reusing_request_id_with_different_fingerprint_is_rejected PASSED [ 50%]
+tests/test_task4_reliability.py::test_request_fingerprint_is_stable_and_sensitive_to_call PASSED [ 60%]
+tests/test_task4_reliability.py::test_retry_succeeds_after_timeout PASSED [ 70%]
+tests/test_task4_reliability.py::test_retry_stops_after_max_attempts PASSED [ 80%]
+tests/test_task4_reliability.py::test_retry_does_not_retry_other_errors PASSED [ 90%]
+tests/test_task4_reliability.py::test_structured_log_is_json_serializable PASSED [100%]
+
+============================= 10 passed in 0.06s ==============================

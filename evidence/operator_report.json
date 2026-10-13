@@ -1,0 +1,29 @@
+{
+  "actual_statuses": {
+    "denied": "denied",
+    "provider_failure": "failed",
+    "success": "ok",
+    "timeout_recovery": "ok"
+  },
+  "expected_statuses": {
+    "denied": "denied",
+    "provider_failure": "failed",
+    "success": "ok",
+    "timeout_recovery": "ok"
+  },
+  "limitations": [
+    "Rate limiting and idempotency are in-memory and process-local.",
+    "Concurrent requests with the same request ID are not atomically reserved.",
+    "The sample repository is local demonstration data, not a live order service."
+  ],
+  "observations": [
+    "Successful requests return validated tool output.",
+    "Unauthorized requests are denied before handler execution.",
+    "Unexpected handler exceptions are mapped to a controlled failure.",
+    "A timeout can recover when bounded retries are explicitly enabled."
+  ],
+  "report_title": "Tool Invocation Flow \u2014 Operator Report",
+  "scenario_count": 4,
+  "scenarios_match_expected": true,
+  "timeout_recovery_attempts": 2
+}

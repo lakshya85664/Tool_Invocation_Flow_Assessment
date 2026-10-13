@@ -1,0 +1,45 @@
+============================================================
+TOPIC 3 — TASK 2: TOOL INVOCATION FLOW
+============================================================
+
+Final response:
+{
+  "status": "ok",
+  "data": {
+    "order_id": "ORD-1001",
+    "status": "shipped",
+    "estimated_delivery": "2026-10-15"
+  },
+  "next_action": "none",
+  "events": [
+    {
+      "stage": "request",
+      "status": "accepted",
+      "request_id": "task2-demo-001"
+    },
+    {
+      "stage": "selection",
+      "status": "selected",
+      "tool": "order.lookup",
+      "version": "1.0.0"
+    },
+    {
+      "stage": "authorization",
+      "status": "allowed",
+      "role": "customer_support"
+    },
+    {
+      "stage": "validation",
+      "status": "valid"
+    },
+    {
+      "stage": "execution",
+      "status": "completed",
+      "duration_ms": 0.09
+    }
+  ]
+}
+
+Saved trace: traces\task2_success.json
+Final status: ok
+Recorded stages: 5
